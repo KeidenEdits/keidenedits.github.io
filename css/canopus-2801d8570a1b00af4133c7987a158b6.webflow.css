@@ -1090,8 +1090,8 @@ figcaption {
 .project-about {
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
-  max-width: 30rem;
+  width: 100%;
+  max-width: 60rem;
   padding: 4rem 3rem 3rem;
   display: flex;
 }
