@@ -1744,8 +1744,8 @@ figcaption {
 }
 
 .container-links {
-  border-style: none solid solid;
-  border-width: 1px;
+  border-style: solid solid solid;
+  border-width: 1px 1px 1px;
   border-color: var(--black-3);
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -1755,6 +1755,7 @@ figcaption {
   width: 100%;
   max-width: 45rem;
   display: flex;
+  border-radius: 1rem;
 }
 
 .container-links.light {
@@ -1844,6 +1845,11 @@ figcaption {
 
 .links-item.light {
   border-top-color: var(--light-grey-2);
+}
+
+/* Add this new rule to remove the border-top from the first two links-item */
+.links-item:nth-child(-n+2) {
+  border-top: none; /* Remove the top border for the first two items */
 }
 
 .links-item-icon {
