@@ -839,7 +839,7 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 50vh;
   padding-top: 5rem;
   padding-bottom: 5rem;
   display: flex;
@@ -852,7 +852,7 @@ figcaption {
 }
 
 .section.long {
-  padding-top: 10rem;
+  padding-top: 1rem;
 }
 
 .section.from-top {
@@ -3162,6 +3162,37 @@ figcaption {
 
 #w-node-cd314e70-8495-48b0-a400-220184dc88df-756224f9 {
   align-self: start;
+}
+
+@media (max-width: 767px) {
+    .project-tabs-mask {
+        flex-direction: column; /* Stack tabs vertically on small screens */
+    }
+    .project-tab {
+        flex: 1; /* Allow tabs to take equal space */
+    }
+    .video-iframe {
+        height: auto; /* Adjust height for mobile */
+    }
+    .project-tab-content {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        width: 100%; /* Ensure full width */
+    }
+    .project-content-image {
+        width: 100%; /* Ensure full width */
+        height: auto; /* Adjust height for mobile */
+        padding-bottom: 177.78%; /* Maintain 9:16 aspect ratio */
+    }
+    .video-iframe {
+        width: 100%; /* Ensure iframe takes full width */
+        height: auto; /* Adjust height for mobile */
+    }
+}
+
+.project-tabs {
+    margin-top: auto; /* Push tabs to the bottom */
 }
 
 
